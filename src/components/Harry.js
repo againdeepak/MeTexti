@@ -3,7 +3,7 @@ import men from './men.webp'
 export default function Harry(props) {
   return (
     <div className='container text-center '>
-      <img src={men} alt="Something" width={410} style={{border:'rounded-circle'}}></img>
+      <img src={men} className="img-fluid" width={420} alt="harry_sir"></img>
     </div>
   )
 }

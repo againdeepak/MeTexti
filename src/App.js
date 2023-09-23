@@ -2,6 +2,8 @@ import Alert from "./components/Alert";
 import Navbar from "./components/Navbar";
 import Textform from "./components/Textform";
 import { useState } from "react";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import About from "./components/About";
 import Contact from "./components/Contact";
 function App() {
   const [mode, setmode] = useState('light')
@@ -38,13 +40,16 @@ function App() {
   }
   return (
     <>
+      <BrowserRouter>
       <Navbar title="Melloite" mode={mode} enableDark={darkFun} modetext={modetext} />
-      <Alert alert={alert}/>
-      <div className="container my-3">
-        <Textform heading="Enter text here" mode={mode} btnclr={btnclr} />
-      </div>
-      <Contact/>
-      
+      <Alert alert={alert} />
+        <Routes>
+          <Route path="/home" element={<Textform heading="Enter text here..." mode={mode} btnclr={btnclr}  showAlert={showAlert}/>} /> 
+          <Route path="/" element={<Textform heading="Enter text here..." mode={mode} btnclr={btnclr} showAlert={showAlert} />} />
+          <Route path="/contacts" element={<Contact mode={mode} enableDark={darkFun} modetext={modetext} />} />
+          <Route path="/about" element={<About mode={mode} enableDark={darkFun} modetext={modetext}/>} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

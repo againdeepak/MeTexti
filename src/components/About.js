@@ -40,14 +40,14 @@ export default function About(props) {
     // })
     return (
 
-        <div className='container my-3' style={{ backgroundColor: props.mode === 'dark' ? '#4848a8' : 'white', color: props.mode === 'dark' ? 'white' : 'blue' }}>
+        <div className='container my-2  ' style={{ backgroundColor: props.mode === 'dark' ? '#4848a8' : 'white', color: props.mode === 'dark' ? 'white' : 'blue' }}>
             {/* <button className='btn btn-primary my-3' onClick={changeBtn}>{btnText}</button>
             <button className='btn btn-primary my-3 mx-3' onClick={bgImage}>{bg}</button> */}
             <div>
                 <div class="jumbotron ">
-                    <h1 class="display-4">MeTexti</h1>
-                    <p class="lead">This is a TextUtiles Application made by ReactJs.</p>
-                    <hr class="my-4" />
+                    <h1 class="display-3"><b>MeTexti</b></h1>
+                    <p class="lead"><i><b>This is a TextUtiles Application made by React Js.</b></i></p>
+                    <hr class="my-2" />
                     <p>Creating a text manipulation project where you can perform various operations on text, such as counting words, calculating reading time, converting case, removing extra spaces, copying text, and more, can be a valuable exercise for improving your programming skills. Below, I'll outline the steps to create such a project in Python. You can adapt and expand upon these steps as needed.</p>
                     <p>1. <b>User Interface (Optional):</b> You can create a graphical user interface (GUI) using a library like Tkinter or a web-based interface using Flask or Django for a more user-friendly experience. Alternatively, you can create a command-line interface (CLI) for simplicity.</p>
                     <p><b>2. Input Text:</b>
@@ -69,6 +69,5 @@ export default function About(props) {
                 </div>
             </div>
         </div>
-
     )
 }
