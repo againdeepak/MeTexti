@@ -1,5 +1,5 @@
 ### Deployed on ⤵️
-#### :link: https://textagainutiles.netlify.app
+#### :link: https://metexti.netlify.app
 ### ↘️ Getting Started with  Text Utiles App
 #### `npm start`
 
